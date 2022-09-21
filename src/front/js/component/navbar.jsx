@@ -22,14 +22,18 @@ export const Navbar = () => {
       <div className="collapse navbar-collapse" id="navbarNavDropdown">
         <ul className="navbar-nav">
           <li className="nav-item active">
-            <a className="nav-link" href="#">
-              Home <span className="sr-only">(current)</span>
-            </a>
+            <Link to="/">
+              <a className="nav-link" href="#">
+                Home <span className="sr-only">(current)</span>
+              </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
-              Gallery
-            </a>
+            <Link to="/demo">
+              <a className="nav-link" href="#">
+                Gallery
+              </a>
+            </Link>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#">
@@ -37,11 +41,9 @@ export const Navbar = () => {
             </a>
           </li>
           <li className="nav-item">
-            <Link>
-              <a className="nav-link" href="/demo">
-                About Us
-              </a>
-            </Link>
+            <a className="nav-link" href="/demo">
+              About Us
+            </a>
           </li>
         </ul>
       </div>

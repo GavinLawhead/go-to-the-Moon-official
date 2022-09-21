@@ -31,7 +31,7 @@ export const Footer = () => (
           href="https://www.instagram.com/gotothemoonronnie/?hl=en"
           target="_blank"
         >
-          <i class="fab fa-instagram"></i>
+          <i class="fab fa-instagram fa-4x"></i>
         </a>
       </div>
     </section>

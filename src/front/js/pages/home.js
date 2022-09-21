@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
+import "../../styles/demo.css";
 
 import { Context } from "../store/appContext";
 
@@ -7,83 +8,71 @@ export const Home = () => {
   const { store, actions } = useContext(Context);
 
   return (
-    <div>
+    <>
       <div
-        id="carouselExampleIndicators"
+        id="carouselExampleInterval"
         className="carousel slide"
-        data-ride="carousel"
+        data-bs-ride="carousel"
       >
-        <ol className="carousel-indicators">
-          <li
-            data-target="#carouselExampleIndicators"
-            data-slide-to="0"
-            className="active"
-          ></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div className="carousel-inner">
-          <div className="carousel-item active">
+        <div className="carousel carousel-inner">
+          <div className="carousel-item active" data-bs-interval="4000">
             <img
-              className="d-block w-100 h-50"
               src="https://picsum.photos/1000/1000?random=1"
-              alt="First slide"
+              className="d-block w-100"
+              alt="..."
             />
           </div>
-          <div className="carousel-item">
+          <div className="carousel-item" data-bs-interval="4000">
             <img
-              className="d-block w-100 h-50"
               src="https://picsum.photos/1000/1000?random=2"
-              alt="Second slide"
+              className="d-block w-100"
+              alt="..."
             />
           </div>
-          <div className="carousel-item">
+          <div className="carousel-item" data-bs-interval="4000">
             <img
-              className="d-block w-100 h-50"
               src="https://picsum.photos/1000/1000?random=3"
-              alt="Third slide"
+              className="d-block w-100"
+              alt="..."
             />
           </div>
         </div>
-        <a
+        <button
           className="carousel-control-prev"
-          href="#carouselExampleIndicators"
-          role="button"
-          data-slide="prev"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev"
         >
           <span
             className="carousel-control-prev-icon"
             aria-hidden="true"
           ></span>
-          <span className="sr-only">Previous</span>
-        </a>
-        <a
+          <span className="visually-hidden">Previous</span>
+        </button>
+        <button
           className="carousel-control-next"
-          href="#carouselExampleIndicators"
-          role="button"
-          data-slide="next"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next"
         >
           <span
             className="carousel-control-next-icon"
             aria-hidden="true"
           ></span>
-          <span className="sr-only">Next</span>
-        </a>
+          <span className="visually-hidden">Next</span>
+        </button>
       </div>
-      <div className="mx-auto">
+      <div className="cardbox mx-auto">
         <div className="servicecardsright">
           <div className="row">
             <div className="col-sm-8">
               <div className="card border-0">
                 <div className="row card-body">
                   <div className="col-sm-6">
-                    <h5 className="card-title">Service Name</h5>
+                    <h5 className="card-title">Information</h5>
                     <p className="card-text">
-                      Service description for awesome service traffic
+                      Some extra info for your welcome page
                     </p>
-                    <a href="#" className="btn btn-primary">
-                      Read More
-                    </a>
                   </div>
                   <img
                     className="col-sm-6"
@@ -106,13 +95,8 @@ export const Home = () => {
                     alt="sans"
                   />
                   <div className="col-sm-6">
-                    <h5 className="card-title">Service Name</h5>
-                    <p className="card-text">
-                      Service description for awesome service traffic
-                    </p>
-                    <a href="#" className="btn btn-primary">
-                      Read More
-                    </a>
+                    <h5 className="card-title">other info</h5>
+                    <p className="card-text">description of more information</p>
                   </div>
                 </div>
               </div>
@@ -120,6 +104,6 @@ export const Home = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
