@@ -5,7 +5,7 @@ import "../../styles/navbar.css";
 export const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <a className="navbr navbar-brand" href="#">
+      <a className="navbr navbar-brand" href="/">
         Go to the Moon
       </a>
       <button
@@ -35,17 +35,17 @@ export const Navbar = () => {
               </a>
             </Link>
           </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">
-              Other
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="/demo">
-              About Us
-            </a>
-          </li>
         </ul>
+        <span className="nav-item instanav">
+          <span class="instatitle">Check us out on Instagram!</span>
+          <a
+            className="nav-link"
+            href="https://www.instagram.com/gotothemoonronnie/?hl=en"
+            target="_blank"
+          >
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+        </span>
       </div>
     </nav>
   );

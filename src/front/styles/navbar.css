@@ -4,3 +4,13 @@ nav {
   margin-right: 0%;
   /* position: fixed; */
 }
+.navbr {
+  padding-left: 10%;
+}
+.instanav {
+  display: flex;
+  padding-left: 58%;
+}
+.instatitle {
+  padding-top: 5%;
+}
