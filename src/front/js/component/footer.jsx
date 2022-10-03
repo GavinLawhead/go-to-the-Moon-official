@@ -17,12 +17,7 @@ export const Footer = () => (
           <ul className="list-unstyled mb-0">
             <li>
               <a href="#!" className="text-black">
-                Another link
-              </a>
-            </li>
-            <li>
-              <a href="#!" className="text-black">
-                Email
+                gotothemoon@gmail.com
               </a>
             </li>
           </ul>
