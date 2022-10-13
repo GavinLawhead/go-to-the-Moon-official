@@ -31,7 +31,7 @@ export const Navbar = () => {
           <li className="nav-item">
             <Link to="/gallery">
               <a className="nav-link" href="#">
-                Gallery
+                Oneshot
               </a>
             </Link>
           </li>
