@@ -52,7 +52,7 @@ export const Slide = () => {
         return (
           <div key={index} className="wrapper-images">
             <div className="row photos">
-              <div className="image col-sm-6 col-md-4 col-lg-3 item">
+              <div className="zoom image col-sm-6 col-md-4 col-lg-3 item">
                 <img
                   style={{ width: "250px", height: "250px" }}
                   src={item.link}

@@ -20,8 +20,8 @@ export const Modal = ({
       <div onClick={handleRotationRight} className="overlay-arrows_left">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
+          // width="16"
+          // height="16"
           fill="currentColor"
           class="bi bi-arrow-left"
           viewBox="0 0 16 16"
