@@ -65,9 +65,9 @@ export const Home = () => {
       <div className="cardbox mx-auto">
         <div className="servicecardsright">
           <div className="row">
-            <div className="col-sm-8">
+            <div className="al-center col-sm-8">
               <div className="card border-0">
-                <div className="row card-body">
+                <div className=" row card-body">
                   <div className="col-sm-6">
                     <h5 className="card-title">Information</h5>
                     <p className="card-text">
@@ -85,10 +85,10 @@ export const Home = () => {
           </div>
         </div>
         <div className="servicecardsleft">
-          <div className="row">
-            <div className="col-sm-8">
+          <div className=" row">
+            <div className=" al-center2 col-sm-8">
               <div className="card border-0">
-                <div className="row card-body">
+                <div className=" row card-body">
                   <img
                     className="col-sm-6"
                     src="https://picsum.photos/1000/1000?random=13"

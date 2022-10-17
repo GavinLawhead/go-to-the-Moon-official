@@ -4,3 +4,13 @@
 .cardbox {
   justify-content: center;
 }
+.al-center {
+  margin-left: 25%;
+}
+.al-center2 {
+  margin-left: 11.5%;
+}
+img {
+  height: 400px;
+  width: 400px;
+}

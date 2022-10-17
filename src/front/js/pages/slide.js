@@ -54,12 +54,11 @@ export const Slide = () => {
             <div className="row photos">
               <div className="zoom image col-sm-6 col-md-4 col-lg-3 item">
                 <img
-                  style={{ width: "250px", height: "250px" }}
+                  style={{ width: "375px", height: "275px" }}
                   src={item.link}
                   alt={item.text}
                   onClick={() => handleClick(item, index)}
                 />
-                <h2>{item.text}</h2>
               </div>
             </div>
           </div>
@@ -68,8 +67,8 @@ export const Slide = () => {
       {clickedImg && (
         <Modal
           clickedImg={clickedImg}
-          handleRotationRight={handleRotationRight}
-          handleRotationLeft={handleRotationLeft}
+          handleRotationRight={handleRotationLeft}
+          handleRotationLeft={handleRotationRight}
           setClickedImg={setClickedImg}
         />
       )}
