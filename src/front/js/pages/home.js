@@ -1,109 +1,120 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import "../../styles/demo.css";
-
+import Star from "../pages/star.png";
+import Night from "../pages/night.png";
+import Cluster from "../pages/cluster.png";
 import { Context } from "../store/appContext";
 
 export const Home = () => {
   const { store, actions } = useContext(Context);
 
   return (
-    <>
+    <div>
       <div
-        id="carouselExampleInterval"
-        className="carousel slide"
+        id="carouselExampleCaptions"
+        class="carousel slide"
         data-bs-ride="carousel"
       >
-        <div className="carousel carousel-inner">
-          <div className="carousel-item active" data-bs-interval="4000">
-            <img
-              src="https://picsum.photos/1000/1000?random=1"
-              className="d-block w-100"
-              alt="..."
-            />
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src={Star} class="d-block w-100" alt="..." />
+            <div
+              class="carousel-caption d-none d-md-block"
+              style={{ marginBottom: "16%" }}
+            >
+              <h3>Over The Moon</h3>
+              <h1>Life Takes In Shape In Art</h1>
+            </div>
           </div>
-          <div className="carousel-item" data-bs-interval="4000">
-            <img
-              src="https://picsum.photos/1000/1000?random=2"
-              className="d-block w-100"
-              alt="..."
-            />
+          <div class="carousel-item">
+            <img src={Night} class="d-block w-100" alt="..." />
+            <div
+              class="carousel-caption d-none d-md-block"
+              style={{ marginBottom: "16%" }}
+            >
+              <h1>New Website</h1>
+            </div>
           </div>
-          <div className="carousel-item" data-bs-interval="4000">
-            <img
-              src="https://picsum.photos/1000/1000?random=3"
-              className="d-block w-100"
-              alt="..."
-            />
+          <div class="carousel-item">
+            <img src={Cluster} class="d-block w-100" alt="..." />
+            <div
+              class="carousel-caption d-none d-md-block"
+              style={{ marginBottom: "16%" }}
+            >
+              <h1>Third slide label</h1>
+            </div>
           </div>
         </div>
         <button
-          className="carousel-control-prev"
+          class="carousel-control-prev"
           type="button"
-          data-bs-target="#carouselExampleInterval"
+          data-bs-target="#carouselExampleCaptions"
           data-bs-slide="prev"
         >
-          <span
-            className="carousel-control-prev-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Previous</span>
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
         </button>
         <button
-          className="carousel-control-next"
+          class="carousel-control-next"
           type="button"
-          data-bs-target="#carouselExampleInterval"
+          data-bs-target="#carouselExampleCaptions"
           data-bs-slide="next"
         >
-          <span
-            className="carousel-control-next-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Next</span>
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <div className="cardbox mx-auto">
-        <div className="servicecardsright">
-          <div className="row">
-            <div className="al-center col-sm-8">
-              <div className="card border-0">
-                <div className=" row card-body">
-                  <div className="col-sm-6">
-                    <h5 className="card-title">Information</h5>
-                    <p className="card-text">
-                      Some extra info for your welcome page
-                    </p>
-                  </div>
-                  <img
-                    className="col-sm-6"
-                    src="https://picsum.photos/1000/1000?random=12"
-                    alt="sans"
-                  />
-                </div>
-              </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-4">
+            <div id="cf">
+              <img
+                class="bottom"
+                src="https://cdn.britannica.com/38/111338-050-D23BE7C8/Stars-NGC-290-Hubble-Space-Telescope.jpg"
+              />
+              <img
+                class="top"
+                src="https://media.npr.org/assets/img/2015/03/31/stars-d1900fc64ba48ac3633054f03a7864aa601973f3-s1100-c50.jpg"
+              />
             </div>
           </div>
-        </div>
-        <div className="servicecardsleft">
-          <div className=" row">
-            <div className=" al-center2 col-sm-8">
-              <div className="card border-0">
-                <div className=" row card-body">
-                  <img
-                    className="col-sm-6"
-                    src="https://picsum.photos/1000/1000?random=13"
-                    alt="sans"
-                  />
-                  <div className="col-sm-6">
-                    <h5 className="card-title">other info</h5>
-                    <p className="card-text">description of more information</p>
-                  </div>
-                </div>
-              </div>
+          <div class="col-4">
+            <div id="cf">
+              <img
+                class="bottom"
+                src="https://cdn.britannica.com/38/111338-050-D23BE7C8/Stars-NGC-290-Hubble-Space-Telescope.jpg"
+              />
+              <img
+                class="top"
+                src="https://media.npr.org/assets/img/2015/03/31/stars-d1900fc64ba48ac3633054f03a7864aa601973f3-s1100-c50.jpg"
+              />
             </div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
