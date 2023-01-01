@@ -54,7 +54,7 @@ export const Home = () => {
               class="carousel-caption d-none d-md-block"
               style={{ marginBottom: "16%" }}
             >
-              <h1>Over The Moon!</h1>
+              <h1>Our Brand New Website!</h1>
             </div>
           </div>
           <div class="carousel-item">
@@ -63,7 +63,7 @@ export const Home = () => {
               class="carousel-caption d-none d-md-block"
               style={{ marginBottom: "16%" }}
             >
-              <h1>Our New Website!</h1>
+              <h1>Where Life Takes Shape In Art!</h1>
             </div>
           </div>
         </div>
@@ -89,7 +89,7 @@ export const Home = () => {
       <div class="container">
         <div class="imgbox row justify-content-center">
           <div>
-            <h1 class="seeinfront">Where Life Takes In Shape In Art</h1>
+            <h1 class="seeinfront">Go to the Moon!</h1>
           </div>
           <div class="col-4">
             <div id="cf">
