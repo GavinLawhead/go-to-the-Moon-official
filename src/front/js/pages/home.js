@@ -45,8 +45,7 @@ export const Home = () => {
               class="carousel-caption d-none d-md-block"
               style={{ marginBottom: "16%" }}
             >
-              <h3>Over The Moon</h3>
-              <h1>Life Takes In Shape In Art</h1>
+              <h1>Welcome to...</h1>
             </div>
           </div>
           <div class="carousel-item">
@@ -55,7 +54,7 @@ export const Home = () => {
               class="carousel-caption d-none d-md-block"
               style={{ marginBottom: "16%" }}
             >
-              <h1>New Website</h1>
+              <h1>Over The Moon!</h1>
             </div>
           </div>
           <div class="carousel-item">
@@ -64,7 +63,7 @@ export const Home = () => {
               class="carousel-caption d-none d-md-block"
               style={{ marginBottom: "16%" }}
             >
-              <h1>Third slide label</h1>
+              <h1>Our New Website!</h1>
             </div>
           </div>
         </div>
@@ -88,7 +87,10 @@ export const Home = () => {
         </button>
       </div>
       <div class="container">
-        <div class="row justify-content-center">
+        <div class="imgbox row justify-content-center">
+          <div>
+            <h1 class="seeinfront">Where Life Takes In Shape In Art</h1>
+          </div>
           <div class="col-4">
             <div id="cf">
               <img
