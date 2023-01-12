@@ -4,6 +4,7 @@ import "../../styles/demo.css";
 import Star from "../pages/star.png";
 import Night from "../pages/night.png";
 import Cluster from "../pages/cluster.png";
+import Boy4 from "../../img/boy8.jpg";
 import { Context } from "../store/appContext";
 
 export const Home = () => {
@@ -49,7 +50,7 @@ export const Home = () => {
             </div>
           </div>
           <div class="carousel-item">
-            <img src={Night} class="d-block w-100" alt="..." />
+            <img src={Boy4} class="d-block w-100" alt="..." />
             <div
               class="carousel-caption d-none d-md-block"
               style={{ marginBottom: "16%" }}
@@ -109,10 +110,16 @@ export const Home = () => {
                 class="bottom"
                 src="https://cdn.britannica.com/38/111338-050-D23BE7C8/Stars-NGC-290-Hubble-Space-Telescope.jpg"
               />
+              <div class="overlay2">
+                <div class="text2"></div>
+              </div>
               <img
                 class="top"
                 src="https://media.npr.org/assets/img/2015/03/31/stars-d1900fc64ba48ac3633054f03a7864aa601973f3-s1100-c50.jpg"
               />
+              <div class="overlay">
+                <div class="text"></div>
+              </div>
             </div>
           </div>
         </div>
