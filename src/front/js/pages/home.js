@@ -6,7 +6,10 @@ import Night from "../pages/night.png";
 import Cluster from "../pages/cluster.png";
 import Boy4 from "../../img/boy8.jpg";
 import { Context } from "../store/appContext";
-
+import left from "../pages/onleft.jpeg";
+import leftTwo from "../pages/onleft2.jpeg";
+import onright from "../pages/onright.jpeg";
+import onright2 from "../pages/onright2.jpeg";
 export const Home = () => {
   const { store, actions } = useContext(Context);
 
@@ -94,32 +97,14 @@ export const Home = () => {
           </div>
           <div class="col-4">
             <div id="cf">
-              <img
-                class="bottom"
-                src="https://cdn.britannica.com/38/111338-050-D23BE7C8/Stars-NGC-290-Hubble-Space-Telescope.jpg"
-              />
-              <img
-                class="top"
-                src="https://media.npr.org/assets/img/2015/03/31/stars-d1900fc64ba48ac3633054f03a7864aa601973f3-s1100-c50.jpg"
-              />
+              <img class="bottom" src={left} />
+              <img class="top" src={leftTwo} />
             </div>
           </div>
           <div class="col-4">
             <div id="cf">
-              <img
-                class="bottom"
-                src="https://cdn.britannica.com/38/111338-050-D23BE7C8/Stars-NGC-290-Hubble-Space-Telescope.jpg"
-              />
-              <div class="overlay2">
-                <div class="text2"></div>
-              </div>
-              <img
-                class="top"
-                src="https://media.npr.org/assets/img/2015/03/31/stars-d1900fc64ba48ac3633054f03a7864aa601973f3-s1100-c50.jpg"
-              />
-              <div class="overlay">
-                <div class="text"></div>
-              </div>
+              <img class="bottom" src={onright} />
+              <img class="top" src={onright2} />
             </div>
           </div>
         </div>
