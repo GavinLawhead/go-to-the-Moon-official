@@ -47,27 +47,27 @@ export const Home = () => {
             <img src={Star} class="d-block w-100" alt="..." />
             <div
               class="carousel-caption d-none d-md-block"
-              style={{ marginBottom: "16%" }}
+              style={{ marginBottom: "8%" }}
             >
-              <h1>Welcome to...</h1>
+              <p class="carousel-caption">Welcome to...</p>
             </div>
           </div>
           <div class="carousel-item">
             <img src={Boy4} class="d-block w-100" alt="..." />
             <div
               class="carousel-caption d-none d-md-block"
-              style={{ marginBottom: "16%" }}
+              style={{ marginBottom: "6%" }}
             >
-              <h1>Our Brand New Website!</h1>
+              <p class="carousel-caption">Our Brand New Website!</p>
             </div>
           </div>
           <div class="carousel-item">
             <img src={Cluster} class="d-block w-100" alt="..." />
             <div
               class="carousel-caption d-none d-md-block"
-              style={{ marginBottom: "16%" }}
+              style={{ marginBottom: "6%" }}
             >
-              <h1>Where Life Takes Shape In Art!</h1>
+              <p class="carousel-caption">Where Life Takes Shape In Art!</p>
             </div>
           </div>
         </div>
